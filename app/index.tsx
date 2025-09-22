@@ -1,9 +1,13 @@
-import { Text, View } from "react-native";
+import React from "react";
+import { View } from "react-native";
+import WelcomeMessage from "../components/welcomemessage"; // chemin relatif selon ton projet
 
-export default function Index() {
+export default function App() {
   return (
-<View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text style={{ fontSize: 24 }}>Bienvenue dans mon app Expo 🚀</Text>
+    <View>
+      <WelcomeMessage name="Ali" />
+      <WelcomeMessage name="Fatma" />
+      <WelcomeMessage name="John" />
     </View>
   );
 }
